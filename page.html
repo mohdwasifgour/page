@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  body{
+    background-color: rgb(183, 184, 183);
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  @media screen and (max-width:900px){
+    #navs{
+      width: 700px;
+      font-size: 30px;
+
+    }
+    
+  }
+  @media screen and (max-width:700px){
+    .box1{
+      width: 500px;
+      height: 600px;
+      /* font-size: 5px; */
+      color: blue;
+
+    }
+    
+  }
+  @media screen and (max-width:500px){
+    .con{
+      width: 300px;
+
+    }
+    
+  }
+  .container{
+    width: 900px;
+    height: 1380px;
+    position: relative;
+    left: 280px;
+    background-color: white;
+    box-shadow: inset 5px 5px 5px rgb(238, 229, 229), 5px 5px 5px rgb(228, 215, 215);
+  }
+  .con{
+    width: 900px;
+    height: 80px;
+    background-color: rgb(255,194,194);
+    
+  }
+  #ethen{
+    position: relative;
+    top: -30px;
+    left: 70px;
+    font-size: 19px;
+    font-weight: 508;
+    font-family: sans-serif;
+  }
+  .con i img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 100%;
+    top: 15px;
+    left: 10px;
+  }
+  #yrs{
+
+    position: relative;
+    top: -23px;
+    left: 68px;
+    font-size:16px;
+    font-family: sans-serif;
+    color: rgb(86, 86, 89);
+  }
+  .mal{
+    width: 108px;
+    height: 31px;
+    font-family: sans-serif;
+    position: relative;
+    left: 780px;
+    border-radius: 4px ;
+    top: -41px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: beige;
+
+  }
+  .male{
+    width: 90px;
+    height: 27px;
+    font-family: sans-serif;
+    position: relative;
+    left: 818px;
+    border-radius: 3px ;
+    top: -99px;
+    font-size: 17px;    
+    color: rgb(66, 64, 63);
+  }
+  .male p{
+    position: relative;
+    margin-top: 10px;
+  }
+  .box{
+    width: 900px;
+    height: 290px;
+    box-shadow: inset 1px 1px 1px rgb(238, 229, 229), 1px 5px 5px rgb(228, 215, 215); 
+    
+  }
+ 
+  .patie{
+    width: 275px;
+    height: 80px;
+    border-left: 1px solid rgb(202, 173, 173);
+    border-right: 1px solid rgb(202, 173, 173);
+    position: relative;
+    top: 25px;
+    margin-left: 8px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(154, 149, 141);
+  }
+  .pate{
+    width: 420px;
+    height: 80px;
+    border-left: 1px solid rgb(202, 173, 173);
+    border-right: 1px solid rgb(202, 173, 173);
+    position: relative;
+    top: 25px;
+    margin-left: -40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(154, 149, 141);
+  }
+  .pati{
+    width: 275px;
+    height: 40px;
+    color: rgb(94, 82, 82);
+    position: relative;
+    top: 16px;
+    
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,246,239);
+    box-shadow: inset 5px 5px 5px rgb(238, 229, 229), 5px 5px 5px rgb(193, 163, 163);
+    border-radius: 5px;
+  }
+  .pai{
+    width: 420px;
+    height: 40px;
+    color: rgb(94, 82, 82);
+    position: relative;
+    top: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,246,239);
+    box-shadow: inset 5px 5px 5px rgb(238, 229, 229), 5px 5px 5px rgb(190, 163, 163);
+    border-radius: 5px;
+  }
+  .patie i{
+    position: relative;
+    left: 125px;
+  }
+  .pate i{
+    position: relative;
+    left: 200px;
+  }
+  #pat{
+    position: relative;
+    left: 610px;
+    top: -57px;
+
+  }
+  #pa{
+    position: relative;
+    left: 320px;
+    top: -135px;
+
+  }
+  #po{
+    position: relative;
+    left: 500px;
+    top: -70px;
+  }
+  #pi{
+    position: relative;
+    left: 50px;
+    top: -150px;
+    
+  }
+  .admi{
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    left: 55px;
+    font-family:sans-serif;
+    color: rgb(93, 93, 71);
+
+  }
+  .time{
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    font-family:sans-serif;
+   left: 600px;
+   color: rgb(93, 93, 71);
+  }
+  .tim{
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 7px;
+    height: 33px;
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+    font-family:sans-serif;
+   left: 780px;
+   color:red;
+   box-shadow: inset 5px 5px 5px rgb(238, 229, 229), 5px 5px 5px rgb(190, 163, 163)
+
+  }
+  .fa-sharp{
+    position: relative;
+    color:rgb(212, 186, 186);
+  
+  }
+  .line{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    margin-top: 50px;
+    background-color:white;
+
+
+  }
+  .lines{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(184, 156, 156) ;
+    border-radius: 50px;
+    position: relative;
+    top: -60px;
+    left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+}
+.linese{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(240, 235, 235) ;
+    border-radius: 50px;
+    position: relative;
+    top: -60px;
+    left: 120px;
+    margin-top: 50px;
+}
+
+  .adm{
+    border: 1px solid rgb(224, 214, 214);
+    position: relative;
+    top: 520px;
+    left: -305px;
+    transform: rotate(90deg);
+    /* border-top:30px ; */
+  }
+  .ad{
+    border: 1px solid rgb(183, 184, 183);
+    position: relative;
+    top: 590px;
+    left: -305px;
+    transform: rotate(90deg);
+  }
+
+  .box1{
+    width: 900px;
+    height: 1010px;
+    position: relative;
+    background-color: rgb(250, 250, 248);
+  }
+  .line img{
+    width: 50px;
+    height:50px;
+
+  }
+  .lie{
+    font-size: 26px;
+    display: flex;
+    margin-left: -10px;
+    align-items: center;
+
+    justify-content: center;
+    
+  }
+  .fa-bed-front{
+    color: rgb(255, 0, 93);
+  }
+  .timing{
+    font-size: 20px;
+    z-index: 1px;
+    position: relative;
+    margin-top: 0px;
+    left:30px ;
+  }
+  .pad{
+    position: relative;
+    top: 5px;
+    left: 50px;
+    color: rgb(65, 75, 75);
+  }
+  .requ{
+    position: relative;
+    left: 190px;
+    top: -80px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .dec{
+    width: 250px;
+    position: relative;
+    top: -20px;
+    left: 190px;
+    font-weight: 500;
+    color: rgb(101, 97, 93);
+    font-size: 18px;
+  }
+  .logo{
+    position: relative;
+    top: -100px;
+    left: 190px;
+    font-weight: 500;
+    color: rgb(101, 97, 93);
+    font-size: 18px;
+
+  }
+  .fa-user{
+    color: blue;
+    
+  }
+  .fa-bed{
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    left: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  #dx{
+    position: relative;
+    left: 300px;
+  }
+  #dxa{
+    position: relative;
+    left: 250px;
+  }
+  #dxb{
+    position: relative;
+    left: 230px;
+  }
+  #adm{
+     position: relative;
+    top: 0px;
+    left: 60px; 
+    font-family: sans-serif;
+    font-size: 20px;
+
+   }
+   .fa-id-card{
+    color: red;
+    margin-left: 30px;
+   }
+   .fa-suitcase-rolling{
+    color: red;
+    margin-left: 75px;
+   }
+  .fa-calendar-days{
+    color: red;
+    margin-left: 60px;
+  }
+  .fa-umbrella{
+    color: red;
+    margin-left: 135px;
+  }
+  .fa-bed-pulse{
+    color: red;
+    margin-left: 65px;
+  }
+  </style>
+<body>
+  <div class="container">
+    <nav>
+      <div class="con" id="navs">
+        <i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREX7pmiYsFUwA-opG0WKGaA5qlwdyLCe9uZg&usqp=CAU" alt=""></i>
+        <div id="ethen">ETHAN WONG</div>
+        <div id="yrs"> Male, 60 Yrs (senior citizen)</div>
+       <div class="mal"><p>Malaysia</p></div>
+       <div class="male" >Resident</div>
+      </div>
+    </nav>
+    <tr><div class="box">
+    <td><div class="patie">patient ID<i class="fa-sharp fa-solid fa-id-card"></i><div class="pati">5321344</div></div></td>
+    <td><div class="patie" id="pat">Ward<i class="fa-sharp fa-solid fa-suitcase-rolling"></i><div class="pati">Ward 2A</div></div></td>
+      <td><div class="patie" id="pa">Visit ID<i class="fa-sharp fa-solid fa-calendar-days"></i><div class="pati">2735678</div></div></td>
+      <td id="os"><div class="pate" id="po">Payor<i class="fa-sharp fa-solid fa-umbrella"></i><div class="pai">AIA BHD (INDIVIDUAL)</div></div></td>
+      <td><div class="pate" id="pi">Bed    (F5-102)<i class="fa-sharp fa-solid fa-bed-pulse"></i><div class="pai">Single Bed</div></div></td>
+    </div>
+    </tr>
+    <div class="box1">
+      <div class="admi">Admission Journey</div>
+    <div class="time">Elapsed Time</div>
+    <div class="tim">02:45</div>
+    <div class="adm"></div>
+    <div class="ad"></div>
+    <div class="line"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_correct.png" alt=""></div><div class="requ">Admission Request<h6 class="dec">Dec 06 2021 08:36 AM</h6></div><div class="logo"><i class="fa-solid fa-user"></i>  Ratha AP</div>
+    <p class="pad">00:24</p><div class="line" id="ne"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_correct.png" alt=""></div><div class="requ">Sent for IGL Approval  <h6 class="dec" id="dxb">  Dec 06 2021 09:00 AM</h6></div><div class="logo"><i class="fa-solid fa-user"></i>  Jim chin</div>
+    <p class="pad">02:23</p><div class="line"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_correct.png" alt=""></div><div class="requ">Received IGL Approval<h6 class="dec" id="dxa">  Dec 06 2021 11:23 AM</h6></div><div class="logo"><i class="fa-solid fa-user"></i>  Jim chin</div>
+    <p class="pad">00:15</p><div class="line"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_correct.png" alt=""></div><div class="requ">Requested Bed Confirmation<h6 class="dec" id="dx">Dec 06 2021 11:38 AM</h6></div><div class="logo"><i class="fa-solid fa-user"></i>  Jim chin</div>
+    <div class="lines" id="li"><i class="fa-sharp fa-solid fa-bed"></i><div id="adm">Admitted</div></div>
+    <div class="lines" id="li"><i class="fa-sharp fa-solid fa-bed"></i><div id="adm">Accepted</div></div>
+    </div>
+    </div>
+</body>
+</html>
